@@ -1,0 +1,29 @@
+{
+  "name": "alexey-rasskazov/highlight-autodetect-off",
+  "type": "grav-plugin",
+  "description": "Switches off autodetection of syntax highlight",
+  "keywords": ["plugin"],
+  "homepage": "https://github.com/alexey-rasskazov/grav-plugin-highlight-autodetect-off",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Alexey Rasskazov",
+      "email": "ra0702@yandex.ru",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": ">=7.1.3"
+  },
+  "autoload": {
+    "psr-4": {
+      "Grav\\Plugin\\HighlightAutodetectOff\\": "classes/"
+    },
+    "classmap":  ["highlight-autodetect-off.php"]
+  },
+  "config": {
+    "platform": {
+      "php": "7.1.3"
+    }
+  }
+}

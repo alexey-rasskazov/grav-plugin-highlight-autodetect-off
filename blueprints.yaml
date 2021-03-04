@@ -1,0 +1,32 @@
+name: Highlight Autodetect Off
+slug: highlight-autodetect-off
+type: plugin
+version: 0.1.0
+description: Switches off autodetection of syntax highlight
+icon: plug
+author:
+  name: Alexey Rasskazov
+  email: ra0702@yandex.ru
+homepage: https://github.com/alexey-rasskazov/grav-plugin-highlight-autodetect-off
+demo: http://demo.yoursite.com
+keywords: grav, plugin, etc
+bugs: https://github.com/alexey-rasskazov/grav-plugin-highlight-autodetect-off/issues
+docs: https://github.com/alexey-rasskazov/grav-plugin-highlight-autodetect-off/blob/master/README.md
+license: MIT
+
+dependencies:
+  - { name: grav, version: '>=1.6.0' }
+
+form:
+  validation: loose
+  fields:
+    enabled:
+      type: toggle
+      label: PLUGIN_ADMIN.PLUGIN_STATUS
+      highlight: 1
+      default: 0
+      options:
+        1: PLUGIN_ADMIN.ENABLED
+        0: PLUGIN_ADMIN.DISABLED
+      validate:
+        type: bool
